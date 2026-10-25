@@ -1,0 +1,15 @@
+<img src="frontend/static/library.jpg" alt="Library bookshelves" class="hero-img">
+<h2>Dashboard</h2>
+<div class="row g-3 mb-4">
+  <div class="col-6 col-md-3"><div class="card p-3"><div class="big-number" id="countBooks"></div>Books</div></div>
+  <div class="col-6 col-md-3"><div class="card p-3"><div class="big-number" id="countAuthors"></div>Authors</div></div>
+  <div class="col-6 col-md-3"><div class="card p-3"><div class="big-number" id="countMembers"></div>Members</div></div>
+  <div class="col-6 col-md-3"><div class="card p-3"><div class="big-number" id="countLoans"></div>Loans</div></div>
+</div>
+<h4>Recent loans</h4>
+<div class="table-responsive">
+  <table class="table mb-0">
+    <thead><tr><th>Book</th><th>Member</th><th>Due date</th><th>Status</th></tr></thead>
+    <tbody id="recentLoans"></tbody>
+  </table>
+</div>

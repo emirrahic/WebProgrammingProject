@@ -1,0 +1,26 @@
+<h2>Authors</h2>
+
+<button class="btn btn-dark mb-3" onclick="openModal('Add')">Add author</button>
+<div class="table-responsive">
+  <table class="table table-hover mb-0">
+    <thead><tr><th>ID</th><th>Name</th><th>Country</th><th>Actions</th></tr></thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<div class="modal fade" id="formModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <form id="itemForm">
+      <div class="modal-header"><h5 class="modal-title"><span id="modalTitle">Add</span> author</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <div class="mb-3"><label class="form-label">Name</label><input type="text" name="name" class="form-control" required></div>
+        <div class="mb-3"><label class="form-label">Country</label><input type="text" name="country" class="form-control" required></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-dark">Save</button>
+      </div>
+    </form>
+  </div></div>
+</div>
