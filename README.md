@@ -1,6 +1,6 @@
 # Library Book Management System
 
-University web project (PHP + JS + MySQL). **Current stage: Milestone 1** (project setup, static SPA frontend, ERD draft).
+University web project (PHP + JS + MySQL). **Current stage: Milestone 2** (database and DAO layer, on top of the static SPA frontend from Milestone 1).
 
 ## Description
 A web app for managing a library: books, authors, categories, members and loans (borrowing/returning).
@@ -24,5 +24,22 @@ An external API is not implemented yet.The plan is to use the Open Library API t
 ## Run the frontend locally
 The SPA loads views with `fetch()`, so it needs a local web server (opening index.html directly will not work).I use the VS Code "Live Server" extension on `index.html`.
 
+## Database schema (Milestone 2)
 
+The database is called `library_db` and has five tables. The whole schema with sample data is in `backend/library_db.sql`.
+
+
+
+## DAO layer (Milestone 2)
+
+`backend/dao/BaseDao.php` has the reusable methods getAll, getById, insert, update and delete, all using PDO prepared statements. Each entity has its own class that extends it: UserDao, AuthorDao, CategoryDao, BookDao and LoanDao. The database credentials are read from `backend/config/config.php`, which is not committed. `backend/config/config.example.php` is the template.
+
+## Test accounts
+
+| Role | Email | Password |
+|---|---|---|
+| admin | admin@example.com | admin123 |
+| member | amar@example.com | member123 |
+
+The login itself will be implemented in the future
 
