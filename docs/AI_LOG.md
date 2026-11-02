@@ -7,3 +7,11 @@ I used Claude (claude.ai) as a supporting tool during Milestone 1 to get design 
 I used it also for some javascript functions.
 ### Where the AI was wrong
 I had some trouble getting the dashboard picture to the right size. It was too large for the layout, so I used Claude to help me adjust the image sizing to fit the page properly.
+## Milestone 2
+
+### Tools and tasks
+I used also claude to generate me data for my db and also to create a test file.php to see if my dao is working or not.I had some problems with my xaamp also that i used claude to fix.
+
+
+### Where the AI was wrong
+
