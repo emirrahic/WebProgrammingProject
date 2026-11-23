@@ -15,3 +15,12 @@ I used also claude to generate me data for my db and also to create a test file.
 
 ### Where the AI was wrong
 
+
+## Milestone 3
+
+### Tools and tasks
+I used claude mainly for testing purposes for all the requirements in milestone 3,but also i used it to help me a little bit with some swagger problems i had.
+
+
+### Where the AI was wrong
+
